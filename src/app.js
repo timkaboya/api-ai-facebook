@@ -9,10 +9,10 @@ const JSONbig = require('json-bigint');
 const async = require('async');
 
 const REST_PORT = (process.env.PORT || 5000);
-const APIAI_ACCESS_TOKEN = process.env.APIAI_ACCESS_TOKEN;
+const APIAI_ACCESS_TOKEN = process.env.APIAI_ACCESS_TOKEN || '31c7a1a4f7794a73858844ea3d7f156d';
 const APIAI_LANG = process.env.APIAI_LANG || 'en';
-const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN;
-const FB_PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN;
+const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN || 'cpn_salazar';
+const FB_PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN || 'EAADGL81jVZAgBAP1dZB3iLTpA8cWZBNCbNZCUpEkSQUP7XGSaiboPdIaQJNsMQejUIU6ZBh6tlTEJMP3Stj5S85TR8ACeWKPpJiL1ZAL14Xpav973vk6WmkYseNCSmR7b1qMa5OAvZAknhJbsDZBaGHhgPxOeG9nbZBNq9c7tWU8x5QZDZD';
 const FB_TEXT_LIMIT = 640;
 
 class FacebookBot {
